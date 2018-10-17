@@ -1,0 +1,29 @@
+program QFD;
+
+uses
+  Vcl.Forms,
+  uPrincipal in 'uPrincipal.pas' {frmPrincipal},
+  uTextoConcorrente in 'uTextoConcorrente.pas' {frmConcorrente},
+  uRelacao in 'uRelacao.pas' {frmRelacao},
+  uTexto in 'uTexto.pas' {frmTextoProj},
+  uValorAux in 'uValorAux.pas' {frmValorAux},
+  uTexto2 in 'uTexto2.pas' {frmTextoClie},
+  uValorCli in 'uValorCli.pas' {frmValorCli},
+  uClasses in 'uClasses.pas',
+  uMedidas in 'uMedidas.pas' {frmMedidas};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmPrincipal, frmPrincipal);
+  Application.CreateForm(TfrmConcorrente, frmConcorrente);
+  Application.CreateForm(TfrmRelacao, frmRelacao);
+  Application.CreateForm(TfrmTextoProj, frmTextoProj);
+  Application.CreateForm(TfrmValorAux, frmValorAux);
+  Application.CreateForm(TfrmTextoClie, frmTextoClie);
+  Application.CreateForm(TfrmValorCli, frmValorCli);
+  Application.CreateForm(TfrmMedidas, frmMedidas);
+  Application.Run;
+end.

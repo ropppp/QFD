@@ -1,0 +1,40 @@
+unit uClasses;
+
+interface
+
+type TreqProjeto = class
+  private
+    Fnome   :String;
+  protected
+  public
+    property nome   :String  read Fnome   write Fnome;
+
+    Constructor Create;    // declaração do metodo construtor
+
+    Destructor  Destroy; Override; // declaração do metodo destrutor
+end;
+
+implementation
+
+{ Tpessoa }
+
+constructor TreqProjeto.Create;
+
+begin
+
+// metodo contrutor
+
+end;
+
+destructor TreqProjeto.Destroy;
+
+begin
+
+// metodo destrutor
+
+inherited;
+
+end;
+
+
+end.

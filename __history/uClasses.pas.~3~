@@ -1,0 +1,75 @@
+unit uClasses;
+
+interface
+
+type TreqProjeto = class
+private
+
+// atributos e metodos privados
+
+// atributos privados
+
+Fcodigo :Integer;
+
+Fnome   :String;
+
+Fidade  :Integer;
+
+protected
+
+// atributos e metodos protegidos
+
+public
+
+// atibutos e metodos publicos
+
+// propiedade publicas
+
+property codigo :Integer read Fcodigo write Fcodigo;
+
+property nome   :String  read Fnome   write Fnome;
+
+property idade  :Integer read Fidade  write Fidade;
+
+Constructor Create;    // declaração do metodo construtor
+
+Destructor  Destroy; Override; // declaração do metodo destrutor
+
+// metodos da classe
+
+function saberIdade(qtdAnos :Integer ):Integer;
+
+end;
+
+implementation
+
+{ Tpessoa }
+
+constructor TreqProjeto.Create;
+
+begin
+
+// metodo contrutor
+
+end;
+
+destructor TreqProjeto.Destroy;
+
+begin
+
+// metodo destrutor
+
+inherited;
+
+end;
+
+function TreqProjeto.saberIdade(qtdAnos: Integer): Integer;
+
+begin
+
+Result := Fidade + qtdAnos;
+
+end;
+
+
+end.
